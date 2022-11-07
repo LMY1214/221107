@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+.border {
+    border-bottom: #e2e2e2 solid 1px;
+}
+
+@c: #0077ff;
+
+header {
+    width: 100%;
+    height: 4.2rem;
+    line-height: 4.2rem;
+    font-size: 1.8rem;
+    .border;
+    text-indent: 3.3rem;
+    position: relative;
+    color: @c;
+
+    span {
+        display: inline-block;
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+        width: 2.2rem;
+        height: 2.2rem;
+        background: url(../image/icon_back.png) no-repeat;
+        background-size: contain;
+
+    }
+}
+
+.content {
+    width: 100%;
+    .border;
+    padding: 1.2rem;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+
+    img {
+        width: 7rem;
+        float: left;
+        margin-right: 1rem;
+    }
+
+    >span {
+        display: inline-block;
+        float: left;
+        font-size: 1.5rem;
+        color: #666;
+
+        span {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+    }
+
+    .install {
+        width: 5rem;
+        height: 2.7rem;
+        line-height: 2.7rem;
+        text-align: center;
+        border-radius: .3rem;
+        position: absolute;
+        top: 5rem;
+        right: 1rem;
+        border: 1px solid @c;
+
+        a {
+            color: @c;
+        }
+    }
+
+    h3 {
+        font-size: 1.7rem;
+        font-weight: normal;
+        margin-bottom: 1.8rem;
+    }
+
+    .p {
+        line-height: 2rem;
+        font-size: 1.2rem;
+        color: #666;
+    }
+}
+
+footer {
+    width: 100%;
+    height: 4.9rem;
+    position: fixed;
+    bottom: 0;
+
+
+    ul {
+        height: 4.9rem;
+        display: flex;
+        justify-content: space-between;
+        border-top: #ccc solid 1px;
+        background: #f8f8f8;
+        box-sizing: border-box;
+
+        li {
+            display: inline-block;
+            width: 33%;
+            height: 100%;
+            list-style: none;
+            text-align: center;
+            font-size: 1.1rem;
+            padding-top: 3rem;
+            box-sizing: border-box;
+
+            &:nth-of-type(1) {
+                background: url(../image/btn_01-1.png) no-repeat center .2rem;
+                background-size: 2.4rem;
+            }
+
+            &:nth-of-type(2) {
+                background: url(../image/btn_02.png) no-repeat center .2rem;
+                background-size: 2.4rem;
+            }
+
+            &:nth-of-type(3) {
+                background: url(../image/btn_03.png) no-repeat center .2rem;
+                background-size: 2.4rem;
+            }
+        }
+    }
+}
